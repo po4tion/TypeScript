@@ -8,7 +8,7 @@ if (typeof userInput === 'string') {
   userName = userInput;
 }
 
-function generateError(msg: string, code: number) {
+function generateError(msg: string, code: number): never {
   throw { msg: msg, errorCode: code };
 }
 
